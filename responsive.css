@@ -1,0 +1,1625 @@
+/* =========================================================
+   LUNA HOTEL — RESPONSIVE STYLES
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE SAFETY
+   ========================================================= */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+iframe,
+video {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+.container > *,
+.about-grid > *,
+.location-grid > *,
+.footer-grid > *,
+.split-section > * {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   LARGE TABLETS / SMALL LAPTOPS
+   1200px and below
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: min(calc(100% - 40px), var(--container));
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .header-container {
+        gap: 20px;
+    }
+
+    .about-grid {
+        gap: 50px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .airports-list {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities-grid {
+        gap: 20px;
+    }
+
+    .booking-form {
+        gap: 12px;
+    }
+}
+
+
+/* =========================================================
+   TABLETS
+   992px and below
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    /* HEADER */
+
+    .main-navigation,
+    .header-book-btn {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .mobile-navigation {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+
+        background: var(--navy);
+
+        transition: max-height 0.4s ease;
+    }
+
+    .mobile-navigation.active {
+        max-height: 500px;
+    }
+
+    .mobile-navigation ul {
+        padding: 15px 25px 25px;
+    }
+
+    .mobile-navigation li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-navigation a {
+        display: block;
+        padding: 13px 0;
+
+        color: rgba(255, 255, 255, 0.82);
+
+        font-size: 0.76rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .mobile-navigation a:hover {
+        color: var(--gold-light);
+    }
+
+    .mobile-book-link {
+        color: var(--gold-light) !important;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 680px;
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+
+    /* BOOKING */
+
+    .booking-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-submit {
+        width: 100%;
+    }
+
+
+    /* TRUST BAR */
+
+    .trust-bar-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trust-item:nth-child(3) {
+        border-left: 0;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-content {
+        max-width: none;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+
+    /* ROOMS */
+
+    .rooms-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* FACILITIES */
+
+    .facilities-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+
+    /* SPLIT */
+
+    .split-section {
+        grid-template-columns: 1fr;
+    }
+
+    .split-panel {
+        min-height: 340px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    /* LOCATION */
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container,
+    .map-container iframe {
+        min-height: 380px;
+    }
+
+    .location-info {
+        padding: 45px 30px;
+    }
+
+
+    /* NEARBY */
+
+    .nearby-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   768px and below
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(calc(100% - 32px), var(--container));
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+
+    /* HEADER */
+
+    .header-container {
+        min-height: 70px;
+    }
+
+    .hotel-logo {
+        min-width: 0;
+    }
+
+    .hotel-logo img {
+        width: 32px;
+    }
+
+    .hotel-logo-text {
+        min-width: 0;
+    }
+
+    .hotel-logo-text strong {
+        font-size: 0.95rem;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 600px;
+        margin-top: 70px;
+    }
+
+    .hero-content {
+        width: calc(100% - 70px);
+        max-width: 700px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.7rem, 11vw, 4rem);
+        line-height: 0.98;
+    }
+
+    .hero-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .hero-arrow-prev {
+        left: 12px;
+    }
+
+    .hero-arrow-next {
+        right: 12px;
+    }
+
+
+    /* BOOKING */
+
+    .booking-section {
+        padding-top: 30px;
+    }
+
+    .booking-card {
+        padding: 22px 18px;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-form > * {
+        min-width: 0;
+    }
+
+    .booking-submit {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+
+    /* ROOMS */
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin-inline: auto;
+    }
+
+
+    /* FACILITIES */
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-filters {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .gallery-filter {
+        padding: 8px 16px;
+        font-size: 0.64rem;
+    }
+
+
+    /* LOCATION */
+
+    .map-container,
+    .map-container iframe {
+        min-height: 340px;
+    }
+
+    .location-info {
+        padding: 40px 25px;
+    }
+
+
+    /* NEARBY */
+
+    .nearby-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+        padding: 55px 0;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-grid > * {
+        min-width: 0;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px and below
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+
+    /* HEADER */
+
+    .header-container {
+        min-height: 64px;
+    }
+
+    .hotel-logo img {
+        width: 30px;
+    }
+
+    .hotel-logo-text strong {
+        font-size: 0.88rem;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 580px;
+        margin-top: 64px;
+    }
+
+    .hero-content {
+        width: calc(100% - 64px);
+    }
+
+    .hero-content h1 {
+        font-size: 2.65rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+    .hero-arrow-prev {
+        left: 8px;
+    }
+
+    .hero-arrow-next {
+        right: 8px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+
+    /* TRUST BAR */
+
+    .trust-bar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-item {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .trust-item:first-child {
+        border-top: 0;
+    }
+
+
+    /* BOOKING */
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-submit {
+        grid-column: span 1;
+    }
+
+    .booking-card {
+        padding: 20px 15px;
+    }
+
+
+    /* FACILITIES */
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-filter {
+        padding: 7px 12px;
+    }
+
+
+    /* LOCATION */
+
+    .location-contact-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .map-container,
+    .map-container iframe {
+        min-height: 300px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   360px and below
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        width: calc(100% - 20px);
+    }
+
+
+    /* HEADER */
+
+    .hotel-logo-text strong {
+        font-size: 0.82rem;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        width: calc(100% - 54px);
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    .hero-arrow-prev {
+        left: 6px;
+    }
+
+    .hero-arrow-next {
+        right: 6px;
+    }
+
+
+    /* SECTION */
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+
+    /* FACILITIES */
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-filter {
+        padding: 7px 10px;
+        font-size: 0.6rem;
+    }
+
+
+    /* BOOKING */
+
+    .booking-card {
+        padding: 18px 12px;
+    }
+
+
+    /* LOCATION */
+
+    .location-info {
+        padding: 35px 20px;
+    }
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE SAFETY
+   ========================================================= */
+
+html[dir="rtl"] .hero-buttons {
+    align-items: flex-start;
+}
+
+html[dir="rtl"] .mobile-navigation a {
+    text-align: right;
+}
+
+html[dir="rtl"] .rooms-heading {
+    align-items: flex-start;
+}
+
+@media (max-width: 480px) {
+
+    html[dir="rtl"] .hero-buttons {
+        align-items: stretch;
+    }
+
+    html[dir="rtl"] .hero-arrow-prev {
+        left: auto;
+        right: 8px;
+    }
+
+    html[dir="rtl"] .hero-arrow-next {
+        right: auto;
+        left: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html[dir="rtl"] .hero-arrow-prev {
+        right: 6px;
+    }
+
+    html[dir="rtl"] .hero-arrow-next {
+        left: 6px;
+    }
+}
+/* =========================================================
+   MOBILE HEADER
+   ========================================================= */
+
+@media (max-width: 992px) {
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--navy);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+        backdrop-filter: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .language-button {
+        color: var(--white);
+    }
+
+    .mobile-menu-button span {
+        background: var(--white);
+    }
+}
+
+/* =========================================================
+   FINAL MOBILE POLISH
+   Header + Hero + Trust Bar + Footer
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    /* -----------------------------------------------------
+       HEADER
+       ----------------------------------------------------- */
+
+    .site-header {
+        background: var(--navy) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        backdrop-filter: none;
+    }
+
+    .mobile-menu-button {
+        color: var(--white);
+    }
+
+    .language-button {
+        color: var(--white);
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .hero-section {
+        min-height: 620px;
+        height: 620px;
+        align-items: center;
+    }
+
+    .hero-slide {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: min(88%, 600px);
+        max-width: 600px;
+
+        margin-top: 95px;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 8px;
+
+        font-size: clamp(2.7rem, 10vw, 4rem);
+        line-height: 1.02;
+
+        text-align: center;
+    }
+
+    .hero-title-accent {
+        margin-bottom: 28px !important;
+    }
+
+    .hero-content p {
+        display: none;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn-primary {
+        min-height: 48px;
+        padding: 0 22px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 0.72rem;
+    }
+
+    .btn-video {
+        min-height: 48px;
+        padding: 0 18px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgba(255,255,255,0.55);
+        border-radius: 2px;
+
+        font-size: 0.72rem;
+    }
+
+    .btn-video-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.72rem;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO ARROWS
+       ----------------------------------------------------- */
+
+    .hero-arrow {
+        top: auto;
+        bottom: 78px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 1.5rem;
+
+        background: rgba(10, 16, 22, 0.35);
+        border-color: rgba(255,255,255,0.55);
+
+        transform: none;
+    }
+
+    .hero-arrow-prev {
+        left: 18px;
+    }
+
+    .hero-arrow-next {
+        right: 18px;
+    }
+
+    .hero-dots {
+        bottom: 27px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE TRUST BAR
+   Keep the desktop-style horizontal layout
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .trust-bar-grid {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
+    .trust-item {
+        min-width: 0;
+
+        padding: 18px 5px;
+
+        gap: 5px;
+
+        border-left: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .trust-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .trust-item h4 {
+        margin: 0;
+
+        color: var(--gold-light);
+
+        font-size: 0.62rem;
+        line-height: 1.2;
+
+        white-space: nowrap;
+    }
+
+    .trust-item p {
+        margin: 0;
+
+        font-size: 0.55rem;
+        line-height: 1.25;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* Hero */
+
+    .hero-section {
+        min-height: 590px;
+        height: 590px;
+    }
+
+    .hero-content {
+        width: calc(100% - 45px);
+        margin-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.55rem;
+        margin-bottom: 7px;
+    }
+
+    .hero-title-accent {
+        margin-bottom: 25px !important;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons .btn-primary,
+    .btn-video {
+        min-height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        font-size: 0.64rem;
+    }
+
+    .btn-video-icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    /* Arrows */
+
+    .hero-arrow {
+        width: 34px;
+        height: 34px;
+
+        bottom: 72px;
+
+        font-size: 1.35rem;
+    }
+
+    .hero-arrow-prev {
+        left: 12px;
+    }
+
+    .hero-arrow-next {
+        right: 12px;
+    }
+
+
+    /* Trust bar */
+
+    .trust-item {
+        padding: 16px 2px;
+    }
+
+    .trust-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .trust-item h4 {
+        font-size: 0.55rem;
+    }
+
+    .trust-item p {
+        font-size: 0.48rem;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+       Brand + Quick Links + Facilities + Contact
+       each gets its own row
+       ----------------------------------------------------- */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        padding: 55px 0;
+    }
+
+    .footer-brand {
+        padding-bottom: 32px;
+    }
+
+    .footer-column {
+        width: 100%;
+
+        padding: 22px 0;
+
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-column h3 {
+        margin-bottom: 14px;
+        font-size: 1rem;
+    }
+
+    .footer-column ul {
+        gap: 8px;
+    }
+
+    .footer-column a,
+    .footer-column li {
+        font-size: 0.76rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero-section {
+        min-height: 570px;
+        height: 570px;
+    }
+
+    .hero-content {
+        margin-top: 95px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-buttons {
+        gap: 7px;
+    }
+
+    .hero-buttons .btn-primary,
+    .btn-video {
+        padding-left: 11px;
+        padding-right: 11px;
+
+        font-size: 0.59rem;
+    }
+
+    .trust-item h4 {
+        font-size: 0.50rem;
+    }
+
+    .trust-item p {
+        display: none;
+    }
+}
+/* =========================================================
+   ROOMS PAGE — RESPONSIVE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   TABLETS
+   --------------------------------------------------------- */
+
+@media (max-width: 992px) {
+
+    /* Header */
+
+    .rooms-header {
+        background: var(--navy) !important;
+        border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+
+
+    /* Page Hero */
+
+    .rooms-page-hero {
+        min-height: 500px;
+        background-position: center center;
+    }
+
+    .rooms-page-hero-content {
+        padding-top: 80px;
+        max-width: 650px;
+    }
+
+    .rooms-page-hero-content h1 {
+        font-size: clamp(2.8rem, 6vw, 4.5rem);
+    }
+
+
+    /* Room Cards */
+
+    .room-detail-card {
+        grid-template-columns: 1fr 1fr;
+        min-height: 460px;
+    }
+
+    .room-detail-card.reverse {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .room-detail-image {
+        min-height: 460px;
+    }
+
+    .room-detail-content {
+        padding: 35px;
+    }
+
+    .room-detail-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .room-detail-description {
+        margin-bottom: 24px;
+    }
+
+    .room-specs {
+        gap: 8px;
+    }
+
+    .room-spec {
+        padding: 11px;
+    }
+
+    .room-detail-footer {
+        gap: 12px;
+    }
+
+    .room-detail-footer .btn {
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: nowrap;
+    }
+
+
+    /* Booking CTA */
+
+    .rooms-booking-cta {
+        min-height: 400px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Page Hero */
+
+    .rooms-page-hero {
+        min-height: 480px;
+
+        background-position: center center;
+    }
+
+    .rooms-page-hero-content {
+        padding-top: 90px;
+
+        width: calc(100% - 40px);
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .rooms-page-hero-content .section-eyebrow {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .rooms-page-hero-content h1 {
+        margin-bottom: 16px;
+
+        font-size: clamp(2.5rem, 10vw, 3.6rem);
+        line-height: 1.05;
+    }
+
+    .rooms-page-hero-content p {
+        max-width: 500px;
+        margin: 0 auto;
+
+        font-size: 0.88rem;
+        line-height: 1.7;
+    }
+
+
+    /* Introduction */
+
+    .rooms-intro {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .rooms-intro .section-heading {
+        width: 100%;
+    }
+
+    .rooms-intro .section-title {
+        font-size: 2.2rem;
+    }
+
+    .rooms-intro .section-heading p {
+        font-size: 0.88rem;
+        line-height: 1.75;
+    }
+
+
+    /* Room List */
+
+    .rooms-list-section {
+        padding-bottom: 70px;
+    }
+
+    .rooms-list-section .container {
+        gap: 35px;
+    }
+
+
+    /* Every room becomes one column */
+
+    .room-detail-card,
+    .room-detail-card.reverse {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 0;
+
+        width: 100%;
+    }
+
+
+    /* Image always comes first */
+
+    .room-detail-card .room-detail-image,
+    .room-detail-card.reverse .room-detail-image {
+        order: 1;
+
+        width: 100%;
+        height: 280px;
+        min-height: 280px;
+    }
+
+
+    /* Content always comes second */
+
+    .room-detail-card .room-detail-content,
+    .room-detail-card.reverse .room-detail-content {
+        order: 2;
+
+        width: 100%;
+        padding: 30px 24px 28px;
+    }
+
+
+    /* Hide decorative number if used */
+
+    .room-detail-number {
+        display: none;
+    }
+
+
+    /* Room title */
+
+    .room-detail-content h2 {
+        margin-bottom: 13px;
+
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+
+    /* Description */
+
+    .room-detail-description {
+        max-width: none;
+
+        margin-bottom: 22px;
+
+        font-size: 0.84rem;
+        line-height: 1.75;
+    }
+
+
+    /* Specs */
+
+    .room-specs {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 7px;
+
+        margin-bottom: 24px;
+    }
+
+    .room-spec {
+        min-height: 75px;
+
+        padding: 9px;
+    }
+
+    .room-spec-icon {
+        font-size: 0.9rem;
+    }
+
+    .room-spec strong {
+        font-size: 0.59rem;
+    }
+
+    .room-spec span:last-child {
+        font-size: 0.59rem;
+    }
+
+
+    /* Room footer */
+
+    .room-detail-footer {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 17px;
+
+        padding-top: 20px;
+    }
+
+    .room-detail-price {
+        align-items: flex-start;
+    }
+
+    .room-detail-footer .btn {
+        width: 100%;
+
+        min-height: 46px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Booking CTA */
+
+    .rooms-booking-cta {
+        min-height: 380px;
+        padding: 70px 20px;
+    }
+
+    .rooms-booking-content {
+        width: 100%;
+    }
+
+    .rooms-booking-content h2 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+    }
+
+    .rooms-booking-content p {
+        font-size: 0.84rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    /* Hero */
+
+    .rooms-page-hero {
+        min-height: 440px;
+    }
+
+    .rooms-page-hero-content {
+        width: calc(100% - 32px);
+        padding-top: 85px;
+    }
+
+    .rooms-page-hero-content h1 {
+        font-size: 2.45rem;
+    }
+
+    .rooms-page-hero-content p {
+        font-size: 0.80rem;
+        line-height: 1.65;
+    }
+
+
+    /* Introduction */
+
+    .rooms-intro {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .rooms-intro .section-title {
+        font-size: 2rem;
+    }
+
+
+    /* Room cards */
+
+    .rooms-list-section .container {
+        gap: 25px;
+    }
+
+    .room-detail-card .room-detail-image,
+    .room-detail-card.reverse .room-detail-image {
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .room-detail-card .room-detail-content,
+    .room-detail-card.reverse .room-detail-content {
+        padding: 26px 20px 24px;
+    }
+
+    .room-detail-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .room-detail-description {
+        font-size: 0.80rem;
+    }
+
+
+    /* Specs stay horizontally arranged */
+
+    .room-specs {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 5px;
+    }
+
+    .room-spec {
+        min-height: 72px;
+        padding: 8px 5px;
+    }
+
+    .room-spec strong {
+        font-size: 0.53rem;
+    }
+
+    .room-spec span:last-child {
+        font-size: 0.52rem;
+    }
+
+
+    /* CTA */
+
+    .rooms-booking-cta {
+        min-height: 350px;
+    }
+
+    .rooms-booking-content h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 360px) {
+
+    .rooms-page-hero {
+        min-height: 420px;
+    }
+
+    .rooms-page-hero-content {
+        width: calc(100% - 26px);
+    }
+
+    .rooms-page-hero-content h1 {
+        font-size: 2.15rem;
+    }
+
+
+    .room-detail-card .room-detail-image,
+    .room-detail-card.reverse .room-detail-image {
+        height: 215px;
+        min-height: 215px;
+    }
+
+    .room-detail-card .room-detail-content,
+    .room-detail-card.reverse .room-detail-content {
+        padding: 23px 16px;
+    }
+
+    .room-detail-content h2 {
+        font-size: 1.65rem;
+    }
+
+    .room-detail-description {
+        font-size: 0.76rem;
+    }
+
+    .room-specs {
+        gap: 4px;
+    }
+
+    .room-spec {
+        padding: 7px 3px;
+    }
+
+    .room-spec strong {
+        font-size: 0.48rem;
+    }
+
+    .room-spec span:last-child {
+        font-size: 0.47rem;
+    }
+
+    .rooms-booking-content h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   RTL SAFETY
+   --------------------------------------------------------- */
+
+html[dir="rtl"] .room-detail-card.reverse .room-detail-image {
+    order: 1;
+}
+
+html[dir="rtl"] .room-detail-card.reverse .room-detail-content {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .rooms-page-hero-content {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .room-detail-content {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .room-detail-price {
+        align-items: flex-start;
+    }
+
+}

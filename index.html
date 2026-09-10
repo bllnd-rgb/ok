@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Luna Hotel | Erbil</title>
+
+  <meta name="description" content="Luna Hotel in Erbil — comfortable rooms, modern facilities and a memorable stay.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+         HEADER
+    ========================================== -->
+
+  <header class="site-header" id="header">
+
+    <div class="container header-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="hotel-logo">
+        <img src="assets/logo/logo.png" alt="Luna Hotel">
+        <span class="hotel-logo-text">
+          <strong>Luna Hotel</strong>
+          <em>Erbil</em>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-navigation" aria-label="Main navigation">
+
+        <ul class="nav-list">
+
+          <li><a href="#home" data-lang="nav-home">Home</a></li>
+          <li><a href="#rooms" data-lang="nav-rooms">Rooms</a></li>
+          <li><a href="#facilities" data-lang="nav-facilities">Facilities</a></li>
+          <li><a href="#gallery" data-lang="nav-gallery">Gallery</a></li>
+          <li><a href="#about" data-lang="nav-about">About Us</a></li>
+          <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+
+          <button class="language-button" type="button" aria-label="Select language">
+            <span class="current-language">EN</span>
+            <span class="language-arrow">⌄</span>
+          </button>
+
+          <div class="language-menu">
+            <button type="button" data-language="en">English</button>
+            <button type="button" data-language="ku">کوردی</button>
+            <button type="button" data-language="ar">العربية</button>
+          </div>
+
+        </div>
+
+        <!-- Book Now -->
+        <a href="#booking" class="btn btn-primary header-book-btn" data-lang="book-now">
+          Book Now
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-navigation" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#home" data-lang="nav-home">Home</a></li>
+        <li><a href="#rooms" data-lang="nav-rooms">Rooms</a></li>
+        <li><a href="#facilities" data-lang="nav-facilities">Facilities</a></li>
+        <li><a href="#gallery" data-lang="nav-gallery">Gallery</a></li>
+        <li><a href="#about" data-lang="nav-about">About Us</a></li>
+        <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+        <li><a href="#booking" class="mobile-book-link" data-lang="book-now">Book Now</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================================
+             HERO SLIDER
+        ========================================== -->
+
+    <section class="hero-section" id="home">
+
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image:url('assets/images/LunaHotel-hall.png')"></div>
+        <div class="hero-slide" style="background-image:url('assets/images/lunahotelbuilding.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('assets/images/heroBackground.png')"></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <button class="hero-arrow hero-arrow-prev" type="button" aria-label="Previous slide">‹</button>
+      <button class="hero-arrow hero-arrow-next" type="button" aria-label="Next slide">›</button>
+
+      <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <h1 data-lang="hero-title"></h1>
+
+          <h1 class="hero-title-accent" data-lang="hero-title-accent"></h1>
+          
+
+          <p data-lang="hero-description">
+            A comfortable stay in the heart of Erbil.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary" data-lang="hero-book">Book Your Stay</a>
+            <button type="button" class="btn-video" data-lang="hero-video">
+              <span class="btn-video-icon">▶</span> Watch Video
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-dots">
+        <span class="hero-dot active"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+             TRUST BAR
+        ========================================== -->
+       <section class="trust-bar">
+  <div class="container trust-bar-grid">
+
+    <!-- Great Location -->
+    <div class="trust-item">
+      <span class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10.5c0 5.5-8 11-8 11s-8-5.5-8-11a8 8 0 1 1 16 0Z"/>
+          <circle cx="12" cy="10.5" r="2.5"/>
+        </svg>
+      </span>
+      <div>
+        <h4 data-lang="trust-location-title">Great Location</h4>
+        <p data-lang="trust-location-desc">60 Meter Street, Erbil</p>
+      </div>
+    </div>
+
+ <!-- Indoor Pool -->
+<div class="trust-item">
+  <span class="trust-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+      <path d="M80-120v-80q38 0 57-20t75-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 75 20t57 20v80q-59 0-77.5-20T748-160q-36 0-57 20t-77 20q-56 0-77-20t-57-20q-36 0-57 20t-77 20q-56 0-77-20t-57-20q-36 0-54.5 20T80-120Zm0-180v-80q38 0 57-20t75-20q56 0 77.5 20t56.5 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 57-20t77-20q56 0 75 20t57 20v80q-59 0-77.5-20T748-340q-36 0-55.5 20T614-300q-57 0-77.5-20T480-340q-38 0-56.5 20T346-300q-59 0-78.5-20T212-340q-36 0-54.5 20T80-300Zm196-204 133-133-40-40q-33-33-70-48t-91-15v-100q75 0 124 16.5t96 63.5l256 256q-17 11-33 17.5t-37 6.5q-36 0-57-20t-77-20q-56 0-77 20t-57 20q-21 0-37-6.5T276-504Zm463-306.5q29 29.5 29 70.5 0 42-29 71t-71 29q-42 0-71-29t-29-71q0-41 29-70.5t71-29.5q42 0 71 29.5Z"></path>
+
+    </svg>
+      
+  </span>
+  <div>
+    <h4 data-lang="trust-pool-title">Indoor Pool</h4>
+    <p data-lang="trust-pool-desc">Relax &amp; unwind</p>
+  </div>
+</div>
+
+    <!-- Restaurant -->
+    <div class="trust-item">
+      <span class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2v6M8 2v6M10 2v6"/>
+          <path d="M8 8v14"/>
+          <path d="M16 2v8c0 1.5-1 2-2 2s-2-.5-2-2c0-3 2-5 2-8Z"/>
+          <path d="M16 12v10"/>
+        </svg>
+      </span>
+      <div>
+        <h4 data-lang="trust-restaurant-title">Restaurant</h4>
+        <p data-lang="trust-restaurant-desc">Local &amp; international dining</p>
+      </div>
+    </div>
+
+    <!-- Free Parking -->
+    <div class="trust-item">
+      <span class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"/>
+        </svg>
+      </span>
+      <div>
+        <h4 data-lang="trust-parking-title">Free Parking</h4>
+        <p data-lang="trust-parking-desc">Convenient &amp; secure</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    
+
+    <!-- =========================================
+             WELCOME / ABOUT
+        ========================================== -->
+
+    <section class="about-section section-padding" id="about">
+      <div class="container about-grid">
+
+        <div class="about-content">
+          <span class="section-eyebrow" data-lang="about-eyebrow"></span>
+          <h2 class="section-title" data-lang="about-title"></h2>
+
+          <p data-lang="about-description">
+            Luna Hotel Erbil offers modern accommodation with excellent service and a warm atmosphere.
+          </p>
+
+          <p data-lang="about-description-2">
+            Whether you are visiting for business or leisure, we are here to make your stay exceptional.
+          </p>
+
+          <a href="#rooms" class="btn btn-primary about-btn" data-lang="about-more">Discover More</a>
+        </div>
+
+        <div class="about-image">
+          <img src="assets/images/lunahotelbuilding.jpeg" alt="Luna Hotel building at night" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    
+
+
+
+    <section class="rooms-section section-padding" id="rooms">
+    <div class="container">
+
+        <div class="rooms-heading">
+            <div>
+                <span class="section-eyebrow" data-lang="rooms-eyebrow">
+                    Our Rooms
+                </span>
+
+                <h2 class="section-title" data-lang="rooms-title">
+                    Choose Your Comfort
+                </h2>
+            </div>
+
+            <div class="rooms-heading-actions">
+                <a href="rooms.html"
+                   class="btn btn-outline-dark"
+                   data-lang="rooms-view-all">
+                </a>
+
+                <div class="rooms-arrows">
+                    <button type="button"
+                            class="rooms-arrow rooms-arrow-prev"
+                            aria-label="Previous room">
+                        ‹
+                    </button>
+
+                    <button type="button"
+                            class="rooms-arrow rooms-arrow-next"
+                            aria-label="Next room">
+                        ›
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rooms-grid">
+
+            <!-- SINGLE ROOM -->
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="assets/images/single.jpg"
+                         alt="Single Room"
+                         loading="lazy">
+                </div>
+
+                <div class="room-content">
+
+                    <h3 data-lang="room-single">
+                        Single Room
+                    </h3>
+
+                    <div class="room-meta">
+                        <span>
+                            <span data-lang="room-single-guests">
+                                1 Guest
+                            </span>
+                        </span>
+
+                        <span class="room-meta-divider">•</span>
+
+                        <span>
+                            <span data-lang="room-single-bed">
+                                1 Bed
+                            </span>
+                        </span>
+                    </div>
+
+                    <p class="room-description"
+                       data-lang="room-single-description">
+                        A comfortable room designed for a relaxing stay.
+                    </p>
+
+                    <div class="room-features">
+                        <span data-lang="room-feature-comfort">
+                            Comfortable
+                        </span>
+
+                        <span data-lang="room-feature-private">
+                            Private
+                        </span>
+
+                        <span data-lang="room-feature-relax">
+                            Relaxing
+                        </span>
+                    </div>
+
+                    <div class="room-footer">
+
+                        <div class="room-price">
+                            <small data-lang="room-price-label">
+                                Price
+                            </small>
+
+                            <span data-lang="room-price-request">
+                                On request
+                            </span>
+                        </div>
+
+                        <button type="button"
+                                class="room-view-btn"
+                                data-room="single"
+                                data-lang="room-view">
+                                More
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- DOUBLE ROOM -->
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="assets/images/double.jpg"
+                         alt="Double Room"
+                         loading="lazy">
+
+                </div>
+
+                <div class="room-content">
+
+                    <h3 data-lang="room-double">
+                        Double Room
+                    </h3>
+
+                    <div class="room-meta">
+                        <span>
+                            <span data-lang="room-double-guests">
+                                2 Guests
+                            </span>
+                        </span>
+
+                        <span class="room-meta-divider">•</span>
+
+                        <span data-lang="room-double-bed">
+                            1 Bed
+                        </span>
+                    </div>
+
+                    <p class="room-description"
+                       data-lang="room-double-description">
+                        A welcoming room offering space and comfort for two.
+                    </p>
+
+                    <div class="room-features">
+                        <span data-lang="room-feature-comfort">
+                            Comfortable
+                        </span>
+
+                        <span data-lang="room-feature-private">
+                            Private
+                        </span>
+
+                        <span data-lang="room-feature-relax">
+                            Relaxing
+                        </span>
+                    </div>
+
+                    <div class="room-footer">
+
+                        <div class="room-price">
+                            <small data-lang="room-price-label">
+                                Price
+                            </small>
+
+                            <span data-lang="room-price-request">
+                                On request
+                            </span>
+                        </div>
+
+                        <button type="button"
+                                class="room-view-btn"
+                                data-room="double"
+                                data-lang="room-view">
+                                More
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- FAMILY ROOM -->
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="assets/images/family.jpg"
+                         alt="Family Room"
+                         loading="lazy">
+
+                </div>
+
+                <div class="room-content">
+
+                    <h3 data-lang="room-family">
+                        Family Room
+                    </h3>
+
+                    <div class="room-meta">
+                        <span data-lang="room-family-guests">
+                            3 Guests
+                        </span>
+
+                        <span class="room-meta-divider">•</span>
+
+                        <span data-lang="room-family-bed">
+                            Multiple Beds
+                        </span>
+                    </div>
+
+                    <p class="room-description"
+                       data-lang="room-family-description">
+                        A spacious choice designed with families in mind.
+                    </p>
+
+                    <div class="room-features">
+                        <span data-lang="room-feature-space">
+                            Spacious
+                        </span>
+
+                        <span data-lang="room-feature-comfort">
+                            Comfortable
+                        </span>
+
+                        <span data-lang="room-feature-family">
+                            Family friendly
+                        </span>
+                    </div>
+
+                    <div class="room-footer">
+
+                        <div class="room-price">
+                            <small data-lang="room-price-label">
+                                Price
+                            </small>
+
+                            <span data-lang="room-price-request">
+                                On request
+                            </span>
+                        </div>
+
+                        <button type="button"
+                                class="room-view-btn"
+                                data-room="family"
+                                data-lang="room-view">
+                            More
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- SUITE -->
+            <article class="room-card">
+
+                <div class="room-image">
+                    <img src="assets/images/suit.jpg"
+                         alt="Suite"
+                         loading="lazy">
+
+                </div>
+
+                <div class="room-content">
+
+                    <h3 data-lang="room-suite">
+                        Suite
+                    </h3>
+
+                    <div class="room-meta">
+                        <span data-lang="room-suite-guests">
+                            4 Guests
+                        </span>
+
+                        <span class="room-meta-divider">•</span>
+
+                        <span data-lang="room-suite-bed">
+                            Multiple Beds
+                        </span>
+                    </div>
+
+                    <p class="room-description"
+                       data-lang="room-suite-description">
+                        A spacious suite offering extra room for a comfortable stay.
+                    </p>
+
+                    <div class="room-features">
+                        <span data-lang="room-feature-space">
+                            Spacious
+                        </span>
+
+                        <span data-lang="room-feature-comfort">
+                            Comfortable
+                        </span>
+
+                        <span data-lang="room-feature-relax">
+                            Relaxing
+                        </span>
+                    </div>
+
+                    <div class="room-footer">
+
+                        <div class="room-price">
+                            <small data-lang="room-price-label">
+                                Price
+                            </small>
+
+                            <span data-lang="room-price-request">
+                                On request
+                            </span>
+                        </div>
+
+                        <button type="button"
+                                class="room-view-btn"
+                                data-room="suite"
+                                data-lang="room-view">
+                                More
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- =========================================
+             FACILITIES STRIP
+        ========================================== -->
+
+    <section class="facilities-section" id="facilities">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="section-eyebrow" data-lang="facilities-eyebrow"></span>
+        </div>
+
+        <div class="facilities-grid">
+
+          <div class="facility-card">
+            <span class="facility-icon">♨</span>
+            <h3 data-lang="facility-pool">Indoor Pool</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">✦</span>
+            <h3 data-lang="facility-fitness">Fitness Center</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">◈</span>
+            <h3 data-lang="facility-sauna">Sauna</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">☕</span>
+            <h3 data-lang="facility-restaurant">Restaurant</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">▣</span>
+            <h3 data-lang="facility-parking">Free Parking</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">⌁</span>
+            <h3 data-lang="facility-wifi">Free WiFi</h3>
+          </div>
+
+          <div class="facility-card">
+            <span class="facility-icon">▤</span>
+            <h3 data-lang="facility-meeting">Meeting Rooms</h3>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+             DINING & WELLNESS
+        ========================================== -->
+
+    <section class="split-section">
+
+      <a href="#restaurant" class="split-panel" style="background-image:url('assets/images/restorant.jpeg')">
+        <div class="split-overlay"></div>
+        <div class="split-content">
+          <span class="section-eyebrow" data-lang="restaurant-eyebrow">Dining</span>
+          <h3 data-lang="restaurant-title">Delicious Experience</h3>
+          <p data-lang="restaurant-description">
+            Enjoy a variety of local and international dishes prepared with the finest ingredients.
+          </p>
+          <span class="btn btn-primary" data-lang="restaurant-button">View Restaurant</span>
+        </div>
+      </a>
+
+      <a href="#wellness" class="split-panel" style="background-image:url('assets/images/LunaHotel-hall.png')">
+        <div class="split-overlay"></div>
+        <div class="split-content">
+          <span class="section-eyebrow" data-lang="wellness-eyebrow">Wellness</span>
+          <h3 data-lang="wellness-title">Relax &amp; Recharge</h3>
+          <p data-lang="wellness-description">
+            Take care of your body and mind with our indoor pool, gym and sauna.
+          </p>
+          <span class="btn btn-primary" data-lang="wellness-button">View Wellness</span>
+        </div>
+      </a>
+
+    </section>
+
+
+    <!-- =========================================
+             GALLERY
+        ========================================== -->
+
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="section-eyebrow" data-lang="gallery-eyebrow">Explore Luna Hotel</span>
+          <h2 class="section-title" data-lang="gallery-title">Gallery</h2>
+        </div>
+
+        <div class="gallery-filters">
+          <button type="button" class="gallery-filter active" data-filter="all" data-lang="gallery-all">All</button>
+          <button type="button" class="gallery-filter" data-filter="rooms" data-lang="gallery-rooms">Rooms</button>
+          <button type="button" class="gallery-filter" data-filter="hotel" data-lang="gallery-hotel">Hotel</button>
+          <button type="button" class="gallery-filter" data-filter="dining" data-lang="gallery-dining">Dining</button>
+          <button type="button" class="gallery-filter" data-filter="wellness" data-lang="gallery-wellness">Wellness</button>
+          <button type="button" class="gallery-filter" data-filter="events" data-lang="gallery-events">Events</button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <a href="assets/images/luna1.jpg" class="gallery-item" data-category="hotel">
+            <img src="assets/images/luna1.jpg" alt="Luna Hotel" loading="lazy">
+          </a>
+
+          <a href="assets/images/single.jpg" class="gallery-item" data-category="rooms">
+            <img src="assets/images/single.jpg" alt="Luna Hotel room" loading="lazy">
+          </a>
+
+          <a href="assets/images/restorant.jpeg" class="gallery-item" data-category="dining">
+            <img src="assets/images/restorant.jpeg" alt="Luna Hotel restaurant" loading="lazy">
+          </a>
+
+          <a href="assets/images/LunaHotel-hall.png" class="gallery-item" data-category="wellness">
+            <img src="assets/images/LunaHotel-hall.png" alt="Luna Hotel wellness" loading="lazy">
+          </a>
+
+          <a href="assets/images/luna4.jpg" class="gallery-item" data-category="events">
+            <img src="assets/images/luna4.jpg" alt="Luna Hotel event space" loading="lazy">
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================
+             LOCATION
+        ========================================== -->
+
+    <section class="location-section" id="contact">
+
+      <div class="location-grid">
+
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps?q=Luna%20Hotel%20Erbil&output=embed" title="Luna Hotel location"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="location-info" style="background-image:url('assets/images/luna3.jpg')">
+          <div class="location-info-overlay"></div>
+
+          <div class="location-info-content">
+
+            <span class="section-eyebrow" data-lang="location-eyebrow">Great Location</span>
+            <h2 class="section-title" data-lang="location-title">In the Heart of Erbil</h2>
+
+            <div class="contact-details">
+
+              <div class="contact-item">
+                <span class="contact-icon">⌖</span>
+                <div>
+                  <p data-lang="hotel-address">60 Meter Street, Erbil<br>Iraq, Kurdistan Region</p>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="https://maps.app.goo.gl/pxxBNkWN8xtZGqY96" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary" data-lang="open-map">Get Directions</a>
+
+            <div class="location-contact-row">
+              <a href="tel:+9647730905001" data-lang="location-phone">
+                <span class="contact-icon">☎</span> +964 773 090 5001
+              </a>
+              <a href="mailto:info@lunahotel-erbil.com" data-lang="location-email">
+                <span class="contact-icon">✉</span> info@lunahotel-erbil.com
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+             WHAT'S NEARBY
+        ========================================== -->
+
+    <section class="nearby-section section-padding" id="nearby">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-eyebrow" data-lang="nearby-eyebrow">Explore Erbil</span>
+          <h2 class="section-title" data-lang="nearby-title">What's Nearby</h2>
+          <p data-lang="nearby-description">
+            Discover some of Erbil's popular attractions near Luna Hotel.
+          </p>
+        </div>
+
+        <div class="nearby-list">
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-sami">Sami Abdulrahman Park</h3><span>1.5 km</span></div>
+          </div>
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-citadel">Citadel of Erbil</h3><span>1.8 km</span></div>
+          </div>
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-square">Erbil Square</h3><span>1.9 km</span></div>
+          </div>
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-museum">Erbil Stones &amp; Gemstones Museum</h3><span>2 km</span></div>
+          </div>
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-textile">Kurdish Textile Museum</h3><span>2 km</span></div>
+          </div>
+
+          <div class="nearby-item">
+            <span class="nearby-icon">●</span>
+            <div><h3 data-lang="nearby-minare">Minare Park</h3><span>2.1 km</span></div>
+          </div>
+
+        </div>
+
+        <div class="airports-section">
+          <h3 data-lang="nearby-airports">Closest Airports</h3>
+          <div class="airports-list">
+            <div class="airport-item">
+              <span>✈</span>
+              <span data-lang="airport-erbil">Erbil International Airport</span>
+              <strong>4.4 km</strong>
+            </div>
+            <div class="airport-item">
+              <span>✈</span>
+              <span data-lang="airport-mosul">Mosul International Airport</span>
+              <strong>91 km</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <img src="assets/logo/logo.png" alt="Luna Hotel">
+          <span>Luna Hotel <em>Erbil</em></span>
+        </a>
+        <p data-lang="footer-description">
+          Luna Hotel Erbil is dedicated to providing our guests with comfort, quality and memorable experiences.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="https://wa.me/9647730905001" aria-label="WhatsApp">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-lang="footer-links">Quick Links</h3>
+        <ul>
+          <li><a href="#home" data-lang="nav-home">Home</a></li>
+          <li><a href="#rooms" data-lang="nav-rooms">Rooms</a></li>
+          <li><a href="#facilities" data-lang="nav-facilities">Facilities</a></li>
+          <li><a href="#gallery" data-lang="nav-gallery">Gallery</a></li>
+          <li><a href="#about" data-lang="nav-about">About Us</a></li>
+          <li><a href="#contact" data-lang="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-lang="footer-facilities">Facilities</h3>
+        <ul>
+          <li data-lang="facility-pool">Indoor Pool</li>
+          <li data-lang="facility-fitness">Fitness Center</li>
+          <li data-lang="facility-sauna">Sauna</li>
+          <li data-lang="facility-restaurant">Restaurant</li>
+          <li data-lang="facility-meeting">Meeting Rooms</li>
+          <li data-lang="facility-parking">Free Parking</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-lang="footer-contact">Contact Us</h3>
+        <ul>
+          <li data-lang="footer-location">60 Meter Street, Erbil<br>Iraq, Kurdistan Region</li>
+          <li><a href="tel:+9647730905001">+964 773 090 5001</a></li>
+          <li><a href="mailto:info@lunahotel-erbil.com">info@lunahotel-erbil.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="current-year">2026</span> Luna Hotel Erbil. <span data-lang="footer-rights">All rights reserved.</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Language JavaScript -->
+  <script src="js/language.js"></script>
+
+  <!-- Booking JavaScript -->
+  <script src="js/booking.js"></script>
+
+
+  
+
+</body>
+
+</html>
